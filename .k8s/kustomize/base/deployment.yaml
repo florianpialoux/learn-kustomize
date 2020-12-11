@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app
+  labels:
+    name: my-app
+spec:
+  selector:
+    matchLabels:
+      name: my-app
+  template:
+    metadata:
+      labels:
+        name: my-app
+    spec:
+      containers:
+        - name: container
+          image: alpine:latest
+          env:
+            - name: SHARED_VARIABLE
+              value: "helloworld"

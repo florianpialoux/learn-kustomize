@@ -1,0 +1,11 @@
+version: v1beta9
+
+deployments:
+  - name: app
+    kubectl:
+      kustomize: true
+      manifests:
+        - .k8s/kustomize/overlays/stage
+
+profiles:
+- name: stage
