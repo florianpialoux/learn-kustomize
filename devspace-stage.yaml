@@ -6,6 +6,5 @@ deployments:
       kustomize: true
       manifests:
         - .k8s/kustomize/overlays/stage
-
 profiles:
 - name: stage
