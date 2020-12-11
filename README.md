@@ -46,9 +46,14 @@ This feature helps merging the two `deployment.yaml` together.
 Once you have your file structure organized, it's time to create a `devspace.yaml` dedicated to the envrionment you want to deploy to. <br/>
 In our case **prod** and **stage**, each refers to their own manifests.
 
-Command to run a specific `devspace.yaml`:
+Run a specific `devspace.yaml`:
 ```
 devspace deploy --config devspace-stage.yaml
+```
+
+Purge your deployment:
+```
+devspace purge --config devspace-stage.yaml
 ```
 
 # Useful resources
