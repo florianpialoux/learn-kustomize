@@ -43,7 +43,7 @@ This feature helps merging the two `deployment.yaml` together.
 `resources:` would be used to include an `.yaml` file that isn't merged with another one.<br/>
 
 ### Devspace with kustomize
-Once you have your file structure organized, it's time to create a `devspace.yaml` dedicated to the envrionment you want to deploy to. <br/>
+Once you have your file structure organized, it's time to create a `devspace.yaml` dedicated to the environment you want to deploy to. <br/>
 In our case **prod** and **stage**, each refers to their own manifests.
 
 Run a specific `devspace.yaml`:
